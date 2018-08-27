@@ -50,10 +50,7 @@
 	</script>
 </head>
 <body>
-
 <button onclick="ss();">111111</button>
 <button onclick="ss2();">222222</button>
-<div><iframe src='<%=basePath%>/SelectTest/SelectTest'></iframe></div>
-
 </body>
 </html>
