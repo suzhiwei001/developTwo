@@ -40,10 +40,6 @@ public class BussElementControllers {
 	public String tests(HttpServletRequest request) {
 		String parameter = request.getParameter("name");
 		System.out.println(parameter);
-		
-		
-		
-		System.out.println("dsadSA");
 		return "test";
 	}
 }
