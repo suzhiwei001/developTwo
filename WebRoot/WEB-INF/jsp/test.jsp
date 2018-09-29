@@ -46,11 +46,15 @@
 	        }
 		});	
 	}
-
+	<!--导出-->
+	function sssss(){
+		location.href = "<%=basePath%>/ExportExcelController/exportList?ids=2";
+	}
 	</script>
 </head>
 <body>
 <button onclick="ss();">111111</button>
 <button onclick="ss2();">222222</button>
+<button onclick="sssss();">导出</button>
 </body>
 </html>
