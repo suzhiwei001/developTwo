@@ -1,0 +1,10 @@
+导出excel
+第一，倒入poi.jar
+第二，写工具类
+第三，controller调用
+第四，jsp页面调用
+
+文件主要有 
+	com.szw.test.ExportExcelUtil
+	com.szw.controller.ExportExcelController
+	/suzhiwei-test-two/WebRoot/WEB-INF/jsp/exportExcel.jsp
