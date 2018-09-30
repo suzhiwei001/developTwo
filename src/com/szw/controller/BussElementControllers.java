@@ -1,15 +1,10 @@
 package com.szw.controller;
-
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
-
 import com.szw.pojo.BussElement;
 import com.szw.service.BussElementService;
 
@@ -29,12 +24,9 @@ public class BussElementControllers {
 	 */
 	@RequestMapping("/findByBussElement")
 	@ResponseBody
-	public ModelAndView findByBussElement(){
+	public Object findByBussElement(){
 		List<BussElement> bussElementList = bussElementService.findByBussElement();
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("bussElementList",bussElementList.get(0));
-		modelAndView.setViewName("/szw-bussele");
-		return modelAndView;
+ 		return bussElementList.get(0);
 	}
 	@RequestMapping("/tests")
 	public String tests(HttpServletRequest request) {
