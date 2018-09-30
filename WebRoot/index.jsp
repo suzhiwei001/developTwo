@@ -26,7 +26,7 @@
 	<%-- <jsp:include page="index2.jsp"/> --%>
 	<a href="<%=basePath%>/BussElement/findByBussElement">要素</a>
 	<a href="<%=basePath%>/SelectTest/test">ddd</a>
-	<a href="<%=basePath%>/test?path=student">页面传参数</a>
+	<a href="<%=basePath%>/ForwardPage/forwardPages?name=exportExcel">导出excel测试</a>
 </body> 
 <script type="text/javascript" language="javascript">  
 </script> 
